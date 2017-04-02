@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <title>First App</title>
+  <link rel="stylesheet" href="css/jquery.mobile.min.css">
+  <style>
+    #homeBanner {
+      width: 100%;
+    }
+    
+    .center {
+      text-align: center;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    
+    .banner {
+      display: block;
+      width: 100%;
+    }
+  </style>
+  <script src="js/jquery.js"></script>
+  <script src="js/jquery.mobile.min.js"></script>
+  <script src="phonegap.js"></script>
+  <script src="js/index.js"></script>
+</head>
+
+<body>
+  <div id="homeScreen" data-role="page">
+    <img src="imgs/baneri.jpg" class="banner" />
+    <div data-role="content">
+  
+		<div width="100%">
+			<button onclick="capturePhoto();"  class="ui-btn ui-icon-camera ui-btn-icon-top"></button>
+		</div>		
+		<div width="100%">          
+		  <a href="#aboutScreen"  class="ui-btn ui-icon-user ui-btn-icon-top"></a>
+        </div>		
+		<div width="100%">          
+		  <a href="#loremIpsum"  class="ui-btn ui-icon-comment ui-btn-icon-top"></a>
+        </div>
+<!--		
+		<div width="100%">
+			<button id = "batterystatus" class="ui-btn ui-icon ui-btn-icon-top">batery</button>
+		</div>
+-->		
+		<div width="100%">
+			<button id = "cordovaDevice" class="ui-btn ui-icon-info ui-btn-icon-top"></button>
+		</div>		
+		<div width="100%">
+			<button id = "aks" class="ui-btn ui-icon-gear ui-btn-icon-top"></button>
+		</div>		
+    </div>
+  </div>
+ 
+
+  <div id="aboutScreen" data-role="page">
+    <header data-role="header" data-position="fixed" data-id="appHeader">
+      <h1>About</h1>
+      <a href="#homeScreen" class="ui-btn ui-icon-carat-l ui-btn-icon-notext ui-btn-left ui-nodisc-icon ui-alt-icon">Back</a>
+    </header>
+    <div data-role="content">
+      <img src="imgs/banner.jpeg" width="100%" height="100%"/>
+      <h3 class="center">Info</h3>
+      <p class="center">Aplikacioni i pare Cross Platform.</p>
+      
+	  <button class="ui-btn ui-icon-info ui-btn-icon-top" disabled> Taulant Hoti</button>
+    </div>
+  </div>
+  
+  <div id="loremIpsum" data-role="page">
+    <header data-role="header" data-position="fixed" data-id="appHeader">
+      <h1>Lorem Ipsum Test</h1>
+      <a href="#homeScreen" class="ui-btn ui-icon-carat-l ui-btn-icon-notext ui-btn-left ui-nodisc-icon ui-alt-icon">Back</a>
+    </header>
+		<div data-role="content">
+		  <img src="imgs/obama.jpeg" width="100%" height="100%"/>
+		  <h3 class="center">Lorem</h3>
+		  <p class="center">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam faucibus mi vitae nisl maximus semper. 
+		  Donec vestibulum nibh eu lectus feugiat facilisis. Cras sollicitudin risus ipsum, vel tincidunt mauris mattis vel. 
+		  Nam dolor mauris, congue ut congue sed, maximus non lectus. Proin in pretium mauris. 
+		  Nullam urna quam, aliquet sed neque nec, vehicula venenatis magna. 
+		  In vitae lacus non mi fringilla pulvinar. Etiam ornare lectus quis dui venenatis faucibus. 
+		  Nunc tempor condimentum risus vitae pulvinar. Cras et volutpat magna, non molestie lacus. 
+		  Maecenas ante est, mollis et mauris vitae, interdum efficitur urna. Fusce vitae rhoncus ipsum. 
+		  Phasellus id luctus nibh, sit amet efficitur urna.
+		  Nunc vitae facilisis velit, id congue tellus. Etiam vel interdum metus. Vestibulum fringilla tortor nec porttitor ornare.</p>
+	   </div>
+  </div> 
+</body>
+</html>
