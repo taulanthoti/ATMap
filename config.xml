@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<widget xmlns   = "http://www.w3.org/ns/widgets"
+       id          = "io.cordova.hellocordova"
+    versionCode = "1" 
+    version     = "1.0.0" >
+   <name>First App</name>
+    <description>
+            Aplikacioni i pare ne Cross Platform. 
+    </description>
+    <author>
+             Taulant Hoti 
+    </author>
+    
+    
+    <platform name="android"/>
+    
+    <preference name="phonegap-version" value="cli-6.5.0" />
+    <preference name="orientation" value="portrait" />
+    <preference name="fullscreen" value="true" />
+    <preference name="webviewbounce" value="false" />
+    <preference name="DisallowOverscroll" value="true" />    
+    <preference name="target-device" value="universal"/>    
+    <preference name="StatusBarOverlaysWebView" value="true" />
+    <preference name="StatusBarBackgroundColor" value="#DD2727" />    
+    <preference name="android-minSdkVersion" value="21" />
+    <preference name="android-installLocation" value="auto" />
+	
+      
+       <platform name="android">
+        <icon src="res/icon/android/drawable-ldpi-icon.png" qualifier="ldpi"/>
+        <icon src="res/icon/android/drawable-mdpi-icon.png" qualifier="mdpi"/>
+        <icon src="res/icon/android/drawable-hdpi-icon.png" qualifier="hdpi"/>
+        <icon src="res/icon/android/drawable-xhdpi-icon.png" qualifier="xhdpi"/>
+        <icon src="res/icon/android/drawable-xxhdpi-icon.png" qualifier="xxhdpi"/>
+        <icon src="res/icon/android/drawable-xxxhdpi-icon.png" qualifier="xxxhdpi"/>
+      </platform>
+    	
+		<splash src="splash.png" />
+	
+      
+      <preference name="permissions" value="none"/>
+      <plugin name="cordova-plugin-camera" spec="~2.1.1" source="npm"/>
+      <plugin name="cordova-plugin-device" spec="~1.1.1" source="npm"/>     
+	  <plugin name="cordova-plugin-battery-status" spec="1.2.3" source="npm"/>
+	  <plugin name="cordova-plugin-device-motion" spec="1.2.4" source="npm"/>	  	     
+      <plugin name="cordova-plugin-network-information" spec="1.2.0" source="npm"/>
+      <plugin name="cordova-plugin-splashscreen" spec="~3.2.1" source="npm"/>
+      <plugin name="cordova-plugin-statusbar" spec="~2.1.2" source="npm"/>
+      
+      
+      
+      <access origin="*" subdomains="true"/>
+      
+     
+      <platform name="android">
+        <allow-intent href="market:*"/>
+      </platform>
+           
+</widget>
