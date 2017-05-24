@@ -1,6 +1,8 @@
 # ATMap
 Cross platform app who recommends and finds nearest Bank branches and ATM machines based on current user location. Data is fetched from existing places on Google Maps. This is done through the Google Maps API and Places library. There is a possibility to fetch data from JSON datasets. 
 
+If you wish to download the Android app, please scan the QR code in the following link: https://build.phonegap.com/apps/2552045/share
+
 Furthermore, the code can be customised on different search criteria, related to Google Maps API guidelines. It can be customised to search for places in the list below:
     
     
